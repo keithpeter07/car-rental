@@ -9,10 +9,10 @@ const {
   getPhoto,
   updateCar,
   deleteCar,
-} = require("../controllers/car");
+} = require("../controllers/car.controllers");
 
-const { requireSignIn, isAuth, isAdmin } = require("../controllers/auth");
-const { userById } = require("../controllers/user");
+const { requireSignIn, isAuth, isAdmin } = require("../controllers/auth.controllers");
+const { userById } = require("../controllers/user.controllers");
 
 router.get("/cars", getAllCars, (req, res) => {
   res.json({

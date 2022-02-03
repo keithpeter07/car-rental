@@ -1,5 +1,5 @@
 const formidable = require("formidable");
-const User = require("../models/user");
+const User = require("../models/user.models");
 const _ = require("lodash");
 const fs = require("fs");
 // Get a user by id

@@ -1,8 +1,8 @@
-const Car = require("../models/car");
+const Car = require("../models/car.models");
 const formidable = require("formidable");
 const _ = require("lodash");
 const fs = require("fs");
-const errorHandler = require("../helpers/dbErrorHandler");
+const errorHandler = require("../lib/dbErrorHandler");
 
 //get all the cars [GET]
 exports.getAllCars = (req, res, next) => {

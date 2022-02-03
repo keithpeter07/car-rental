@@ -5,7 +5,7 @@ const {
   getUsersCount,
   getOrdersCount,
   getOrders,
-} = require("../controllers/admin");
+} = require("../controllers/admin.controllers");
 router.get("/users", getAllUsers, (req, res) => {
   res.json({
     users: req.users,

@@ -7,9 +7,9 @@ const {
   getAllOrders,
   getProfilePhoto,
   updateProfile,
-} = require("../controllers/user");
-const { carById } = require("../controllers/car");
-const { requireSignIn, isAuth } = require("../controllers/auth");
+} = require("../controllers/user.controllers");
+const { carById } = require("../controllers/car.controllers");
+const { requireSignIn, isAuth } = require("../controllers/auth.controllers");
 
 router.get("/user/:userId", userById, (req, res) => {
   res.json({
